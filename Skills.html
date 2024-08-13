@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('wp2434267-gradient-4k-wallpapers.jpg');
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav a:hover {
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.exp, .PL {
+    opacity: 1; /* Ensure content is fully visible */
+}
+
+.exp {
+    position: fixed;
+    top: 25%;
+    padding: 1% 10%;
+}
+
+.exp p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.PL {
+    color: #00abf0;
+    padding: 0 10%;
+    position: fixed;
+    top: 50%;
+}
+
+.PL p {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.PL ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.PL li {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.PL li:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">Utkarsh</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Project.html">Project</a>
+        </nav>
+    </header>
+    <div>
+        <div class="exp">
+            <p>
+                Experienced Frontend Developer with strong skills in HTML, CSS, JavaScript, and React. I build
+                intuitive, user-friendly web applications using clean, semantic HTML and modern CSS techniques.
+                Proficient in implementing interactive features with JavaScript and creating dynamic, component-based
+                interfaces with React.
+
+                Key achievements include developing scalable applications, collaborating with designers to translate
+                concepts into functional web components, and optimizing performance. Experienced with version control
+                systems like Git and dedicated to staying updated with industry trends to deliver high-quality
+                solutions.
+            </p>
+        </div>
+
+        <div class="PL">
+            <p>Programming Languages known:-</p><br />
+            <ul>
+                <li>HTML</li>
+                <li>SASS</li>
+                <li>CSS</li>
+                <li>BOOTSTRAP</li>
+                <li>REACT.JS</li>
+                <li>JAVASCRIPT</li>
+                <li>GITHUB</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

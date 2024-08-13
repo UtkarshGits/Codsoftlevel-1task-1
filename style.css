@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('wp2434267-gradient-4k-wallpapers.jpg');
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav a:hover {
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+.home img {
+    margin-left: 300px;
+}
+
+.home-con {
+    max-width: 600px;
+}
+
+.home-con h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.home-con h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 1em;
+}
+
+.home-con p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0 40px;
+}
+
+.btn-box {
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-box .btn:hover {
+    color: #00abf0;
+    background-color: transparent;
+}
+
+.btn-box .btn.btn-outline {
+    background: transparent;
+    color: #00abf0;
+    border-color: #00abf0;
+}
+
+.btn-box .btn.btn-outline:hover {
+    color: #081b29;
+    background-color: #00abf0;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+.home-sci .social-icon {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    font-size: 20px;
+    transition: color 0.5s, transform 0.5s;
+    overflow: hidden;
+}
+
+.home-sci .social-icon:hover {
+    color: #081b29;
+    transform: scale(1.2);
+}
+
+.home-sci .social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.home-sci .social-icon:hover::before {
+    width: 100%;
+}
+
+.prof {
+    margin-left: 50px;
+    height: 400px;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 50%;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.prof:hover {
+    box-shadow: 1px 1px 40px #081b29;
+    transform: scale(1.05);
+}

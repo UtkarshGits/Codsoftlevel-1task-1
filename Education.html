@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: #081b29;
+            color: #081b29;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .logo {
+            color: white;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin-right: 30px;
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #081b29;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        .home, .hom {
+            height: 56vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .home {
+            background-color: aqua;
+        }
+
+        .home-con, .hom-con {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+        }
+
+        .home-con h3, .hom-con h3 {
+            text-decoration: underline;
+        }
+
+        .home-con p, .hom-con p {
+            margin-left: 20px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .home-con p span, .hom-con p span {
+            font-size: 18px;
+            color: #f6f6f7;
+            text-shadow: 2px 2px #081b29;
+        }
+
+        .img {
+            transition: transform 1s, opacity 1s;
+        }
+
+        .img img {
+            height: 180px;
+            margin-left: 100px;
+            box-shadow: 1px 1px 30px #081b29;
+            transition: transform 1s;
+        }
+
+        .img:hover img {
+            transform: scale(1.2);
+            z-index: 2;
+        }
+
+        .hom {
+            color: #00abf0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">Utkarsh</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Project.html">Project</a>
+        </nav>
+    </header>
+    <div class="home">
+        <div class="home-con">
+            <div>
+                <h3>Graduated from:-</h3>
+                <p>I.P P.G Campus-2, Bulandshahr<br />
+                    <span>(Affiliated from:- Chaudhary Charan Singh University, Meerut)</span>
+                </p>
+                <b>Course pursued: Bachelor of Computer Application</b>
+                <b>Started in 2022</b>
+                <b>Completed Most Probably in 2025</b>
+            </div>
+            <div class="img">
+                <img src="CCSU-Logo.jpg" height="100px" />
+            </div>
+        </div>
+    </div>
+    <div class="hom">
+        <div class="hom-con">
+            <div>
+                <h3>Schooling from:-</h3>
+                <p>Rennaissance School, Bulandshahr<br />
+                    <span>(Affiliated from:- Central Board of Secondary Education)</span>
+                </p>
+                <b>Completed in 2022</b>
+            </div>
+            <div class="img">
+                <img src="logo.png" style="box-shadow: 2px 2px 10px white;" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

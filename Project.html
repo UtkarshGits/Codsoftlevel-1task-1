@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('wp2434267-gradient-4k-wallpapers.jpg');
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav a:hover {
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    position: fixed;
+    top: 25%;
+    padding: 1% 10%;
+}
+
+.main a {
+    color: #00abf0;
+    font-size: 18px;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.main a:hover {
+    color: #007bb5;
+}
+
+.az {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.az video {
+    transition: transform 1s, box-shadow 1s;
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+
+.az video:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 1px 1px 20px whitesmoke;
+}
+
+.azc {
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+.azc:hover {
+    transform: translateY(-5px);
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">Utkarsh</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Project.html">Project</a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Project List:-</h2>
+        <div class="az">
+            <div class="azc">
+                <h3>Amazon-Clone</h3>
+                <a href="https://utkarshgits.github.io/Amazon_clone/">https://utkarshgits.github.io/Amazon_clone/</a>
+            </div>
+            <div>
+                <video autoplay loop muted src="Untitled video - Made with Clipchamp.mp4" height="200px"></video>
+            </div>
+        </div>
+        <div class="az">
+            <div class="azc">
+                <h3>Youtube_clone</h3>
+                <a href="https://utkarshgits.github.io/Youtube-clone/">https://utkarshgits.github.io/Youtube-clone/</a>
+            </div>
+            <div>
+                <video autoplay loop muted src="youtube.mp4" height="200px"></video>
+            </div>
+        </div>
+        <div>
+            <h3>Netflix_clone</h3>
+            <a href="https://utkarshgits.github.io/Netflix-clone/">https://utkarshgits.github.io/Netflix-clone/</a>
+        </div>
+    </div>
+</body>
+
+</html>
